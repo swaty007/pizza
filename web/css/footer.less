@@ -1,0 +1,61 @@
+.footer {
+  background-color: @color-6;
+  padding: 40px 0;
+  background-image: url(../images/bg_pex02.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% auto;
+  .nav-block {
+    margin-top: 0;
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+    li {
+      &.title {
+        h3 {
+          color: @color-1;
+          font-size: 15px;
+          line-height: 22px;
+          font-family: @oswald-500;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+      }
+      a {
+        color: #9FA9B4;
+        font-size: 15px;
+        line-height: 20px;
+        font-family: @source-400;
+        font-weight: 400;
+        padding: 0;
+        margin-bottom: 4px;
+        &:hover {
+          background-color: transparent;
+          color: @color-1;
+        }
+      }
+    }
+  }
+  .diviner-line {
+    border-top: 1px solid @color-1;
+    opacity: 0.2;
+    margin-bottom: 20px;
+  }
+  .logo-foot {
+    width: 250px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-text {
+    color: #9FA9B4;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    font-family: @source-400;
+    font-weight: 400;
+  }
+}

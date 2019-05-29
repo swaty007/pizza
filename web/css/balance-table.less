@@ -1,0 +1,64 @@
+.balance-table {
+  font-family:@oswald-400;
+  font-weight: 400;
+  tbody {
+    tr:not(.details) {
+      td:first-child {
+        font-weight: 600;
+      }
+      .detailBtn {
+        text-decoration: none;
+        outline: none;
+        margin-right: 10px;
+        background-color: #E7EAEE;
+        color: @color-2;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        padding: 6px 18px;
+        display: inline-block;
+        border-color: transparent;
+        transition: 0.3s all;
+        &:hover,&:focus {
+          background-color: @color-3;
+          color: @color-1;
+        }
+      }
+      &.success {
+        .completed {
+          display: none;
+        }
+      }
+      &.info {
+        .in_progress {
+          display: none;
+        }
+      }
+    }
+  }
+  div.details {
+    .info-title {
+      font-family: @oswald-500;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: @color-3;
+      font-size: 22px;
+      margin-top: 10px;
+    }
+    .info-details {
+      font-family: @source-600;
+      font-weight: 600;
+      font-size: 16px;
+      color: @color-2;
+      span {
+        color: @color-4;
+      }
+    }
+    .items {
+      border-bottom: 2px solid @color-2;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
